@@ -11,7 +11,6 @@ var methodOverride = require('method-override');
 var bodyParser = require('body-parser');
 var async;
 
-var Riak;
 if(process.env.RIAK_NODES) {
   async = require('async');
   Riak = require('basho-riak-client');
